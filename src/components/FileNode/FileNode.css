@@ -1,0 +1,21 @@
+.node-wrapper {
+  margin-left: 20px;
+}
+
+.node-row {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.node-icon {
+  cursor: pointer;
+}
+
+.node-action {
+  cursor: pointer;
+}
+
+.node-child {
+  margin-left: 20px;
+}

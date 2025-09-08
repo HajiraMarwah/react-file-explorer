@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import FileNode from "./FileNode";
-import AddModal from "./AddModal";
+import "./FileExplorer.css";
+import FileNode from "../FileNode/FileNode";
+import AddModal from "../AddModal/AddModal";
 
 export default function FileExplorer() {
   const [tree, setTree] = useState([
@@ -57,7 +58,7 @@ export default function FileExplorer() {
   const closeModal = () => setModal({ isOpen: false, parentId: null, type: "" });
 
   return (
-    <div>
+    <div className="explorer-container">
       {tree.map((node) => (
         <FileNode
           key={node.id}
